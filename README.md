@@ -488,6 +488,15 @@ Block helper that filters the given array and renders the block for values that 
 <!-- results in: 'BBB' -->
 ```
 
+**Example**
+
+```handlebars
+<!-- array: [{ 'id': 1 }, { 'id': 2 }, { 'id': 3 }] -->
+{{#filter array 1 property='id'}}AAA{{else}}BBB{{/filter}}
+<!-- results in: 'AAA' -->
+```
+
+
 ### [{{first}}](lib/array.js#L142)
 
 Returns the first item, or first `n` items of an array.
